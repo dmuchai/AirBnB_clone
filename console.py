@@ -4,14 +4,19 @@ This module contains the entry point of the command interpreter
 """
 import cmd
 import models
+from models import storage
 from models.base_model import BaseModel
 from shlex import split
+from models.user import User
 
 
 class HBNBCommand(cmd.Cmd):
     """Command interpreter for hbnb"""
     prompt = "(hbnb) "
-    classes = {"BaseModel": BaseModel}
+    classes = {
+            "BaseModel": BaseModel,
+            "User": User,
+            }
 
     def emptyline(self):
         """

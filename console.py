@@ -24,7 +24,7 @@ class HBNBCommand(cmd.Cmd):
         Quit command to exit the program
         """
         return True
-    
+
     def do_EOF(self, arg):
         """
         Exit the program with EOF (Ctrl+D)
@@ -45,7 +45,7 @@ class HBNBCommand(cmd.Cmd):
         new_instance = self.classes[args[0]]()
         new_instance.save()
         print(new_instance.id)
-    
+
     def do_show(self, args):
         """
         Prints the string representation of an instance
@@ -97,7 +97,11 @@ class HBNBCommand(cmd.Cmd):
             if args[0] not in self.classes:
                 print("** class doesn't exist **")
                 return
-            print([str(obj) for key, obj in all_objects.items() if key.startswith(args[0])])
+            print([
+                str(obj)
+                for key, obj in all_objects.items()
+                if key.startswith(args[0])
+                ])
         else:
             print([str(obj) for obj in all_objects.values()])
 
@@ -139,6 +143,7 @@ class HBNBCommand(cmd.Cmd):
             instance.save()
         except Exception:
             print("** value error **")
+
 
 if __name__ == '__main__':
     HBNBCommand().cmdloop()

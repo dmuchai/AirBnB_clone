@@ -13,7 +13,7 @@ class BaseModel:
         self.id = str(uuid.uuid4())
         self.created_at = datetime.now()
         self.updated_at = datetime.now()
-        
+
         if kwargs:
             for key, value in kwargs.items():
                 if key == "__class__":
@@ -55,7 +55,9 @@ if __name__ == "__main__":
     print(my_model_json)
     print("JSON of my_model:")
     for key in my_model_json.keys():
-        print("\t{}: ({}) - {}".format(key, type(my_model_json[key]), my_model_json[key]))
+        print(
+                f"\t{key}: ({type(my_model_json[key])}) - {my_model_json[key]}"
+                )
 
     print("--")
     my_new_model = BaseModel(**my_model_json)

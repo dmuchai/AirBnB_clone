@@ -49,12 +49,8 @@ class FileStorage:
         for obj in all_objs.keys():
             obj_dict[obj] = all_objs[obj].to_dict()
 
-        try:
-            with open(FileStorage.__file_path, "w", encoding="utf-8") as file:
+        with open(FileStorage.__file_path, "w", encoding="utf-8") as file:
                 json.dump(obj_dict, file)
-            print(f"File saved successfully to {FileStorage.__file_path}")
-        except Exception as e:
-            print(f"Error saving file: {e}")
 
     def reload(self):
         """Deserializes the JSON file to __objects, if it exists."""

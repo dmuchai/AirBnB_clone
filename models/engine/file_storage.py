@@ -17,7 +17,7 @@ class FileStorage:
     """
     The Module for serialization-deserialization of data
     """
-    __file_path = "file.json"
+    __file_path = os.path.join(os.path.dirname(__file__), "file.json")
     __objects = {}
 
     classes = {

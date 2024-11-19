@@ -55,12 +55,12 @@ class FileStorage:
                     serialized_obj = json.load(file)
 
                     for key, value in serialized_obj.items():
-                        class_name, obj_id = key.split('.')
+                        class_name =  value["__class__"]
 
                         cls = eval(class_name)
 
                         instance = cls(**value)
 
                         self.__objects[key] = instance
-                except (FileNotFoundError, json.JSONDecodeError):
+                except (FileNotFoundError):
                     pass

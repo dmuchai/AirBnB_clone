@@ -36,11 +36,11 @@ class BaseModel:
 
     def to_dict(self):
         """Convert instance attributes to dictionary format with ISO format"""
-        rep_dict = self.__dict__.copy()
-        rep_dict["__class__"] = self.__class__.__name__
-        rep_dict["created_at"] = self.created_at.isoformat()
-        rep_dict["updated_at"] = self.updated_at.isoformat()
-        return rep_dict
+        serialized_obj = self.__dict__.copy()
+        serialized_obj["__class__"] = self.__class__.__name__
+        serialized_obj["created_at"] = self.created_at.isoformat()
+        serialized_obj["updated_at"] = self.updated_at.isoformat()
+        return serialized_obj
 
 
 if __name__ == "__main__":

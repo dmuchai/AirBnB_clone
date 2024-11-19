@@ -11,8 +11,8 @@ class BaseModel:
         """Initialize a BaseModel class instance"""
         time_format = "%Y-%m-%dT%H:%M:%S.%f"
         self.id = str(uuid.uuid4())
-        self.created_at = datetime.now()
-        self.updated_at = datetime.now()
+        self.created_at = datetime.utcnow()
+        self.updated_at = datetime.utcnow()
 
         if kwargs:
             for key, value in kwargs.items():
@@ -25,13 +25,15 @@ class BaseModel:
 
         models.storage.new(self)
 
+
     def __str__(self):
         """Prints representation of the BaseModel instance"""
         return f"[{self.__class__.__name__}] ({self.id}) {self.__dict__}"
 
     def save(self):
         """public instance attribute updated_at with the current datetime"""
-        self.updated_at = datetime.now()
+        self.updated_at = datetime.utcnow()
+        models.storage.new(self) 
         models.storage.save()
 
     def to_dict(self):

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>AirBnB Clone</title>
+    <link rel="stylesheet" href="styles/4-common.css">
+    <link rel="stylesheet" href="styles/3-header.css">
+    <link rel="stylesheet" href="styles/3-footer.css">
+    <link rel="stylesheet" href="styles/6-filters.css">
+    <link rel="stylesheet" href="styles/100-places.css">
+    <link rel="icon" href="images/icon.png" type="image/png">
+</head>
+<body>
+    <header>
+            <div class="logo"></div>
+    </header>
+    <div class="container">
+            <section class="filters">
+                    <div class="locations">
+                            <h3>States</h3>
+                            <h4>Nairobi, Mombasa...</h4>
+			    <ul class="popover">
+				    <li>
+					    <h2>Mombasa</h2>
+					    <ul>
+						    <li>Mtwapa</li>
+						    <li>Shanzu</li>
+					    </ul>
+				    </li>
+				    <li>
+					    <h2>Nairobi</h2>
+					    <ul>
+						    <li>Kilimani</li>
+						    <li>Westlands</li>
+					    </ul>
+				    </li>
+			    </ul>
+                    </div>
+                    <div class="amenities">
+                            <h3>Amenities</h3>
+                            <h4>Wifi, Kitchen...</h4>
+			    <ul class="popover">
+				    <li>Wifi</li>
+				    <li>Kitchen</li>
+				    <li>Parking</li>
+			    </ul>
+                    </div>
+                    <button type="button">Search</button>
+            </section>
+	    <section class="places">
+		    <h1>Places</h1>
+		    <article>
+			    <div class="places_headline">
+				    <h2>My home</h2>
+                                    <div class="price_by_night">$80</div>
+			    </div>
+			    <div class="information">
+				    <div class="max_guest">
+					    <div class="guest_icon"></div>
+					    <p>4 guests</p>
+				    </div>
+				    <div class="number_rooms">
+					    <div class="rooms_icon"></div>
+					    <p>2 bedroom</p>
+				    </div>
+				    <div class="number_bathrooms">
+					    <div class="bathrooms_icon"></div>
+					    <p>1 bathroom</p>
+				    </div>
+			    </div>
+			    <div class="user">
+				    <strong>Owner:</strong> John Doe
+			    </div>
+
+			    <div class="description">
+				    Escape to a stylish 2-bedroom apartment nestled in the heart of the city. This bright and airy space features modern furnishings, a fully equipped kitchen, and a private balcony overlooking a bustling street. Enjoy the convenience of being steps away from trendy cafes, boutique shops, and vibrant nightlife. Perfect for couples or small families looking to explore the city in comfort and style.               
+			    </div>
+			    <div class="amenities">
+				    <h2 class="article_subtitle">Amenities</h2>
+				    <ul>
+					    <li><div class="tv_icon"></div>TV</li>
+					    <li><div class="wifi_icon"></div>Wifi</li>
+					    <li><div class="pet_icon"></div>Pet friendly</li>
+				    </ul>
+			    </div>
+			    <div class="reviews">
+				    <h2 class="article_subtitle">Reviews</h2>
+				    <ul>
+					    <li>
+						    <div class="review_item">
+							    <h3>From Bob Dylan the 27th January 2017</h3>
+							    <p class="review_text">Wow, what can I say?! I'm a real rolling stone, you may have heard, but - by golly - I'd just as well settle down in this humble home, if you'd part with it - course, I'm sure you wouldn't. Real shame too. Oh well...</p>
+						    </div>
+					    </li>
+					    <li>
+						    <div class="review_item">
+							    <h3>From Justin Majetich the 28th April 1991</h3>
+							    <p class="review_text">I was birthed in this here bathtub today!</p>
+						    </div>
+					    </li>
+				    </ul>
+			    </div>
+
+		    </article>
+		    <article>
+			    <div class="places_headline">
+				    <h2>Tiny house</h2>
+				    <div class="price_by_night">$65</div>
+			    </div>
+                            <div class="information">
+                                    <div class="max_guest">
+                                            <div class="guest_icon"></div>
+					    <p>2 guests</p>
+                                    </div>
+                                    <div class="number_rooms">
+                                            <div class="rooms_icon"></div>
+					    <p>1 bedroom</p>
+                                    </div>
+                                    <div class="number_bathrooms">
+                                            <div class="bathrooms_icon"></div>
+					    <p>1 bathroom</p>
+                                    </div>
+			    </div>
+			    <div class="user">
+                                    <strong>Owner:</strong> Jane Doe
+			    </div>
+			    <div class="description">
+				    Unwind in this charming 1-bedroom log cabin surrounded by towering pines. With a crackling wood-burning stove, a comfy king-sized bed, and a wraparound porch complete with a hammock, this property is perfect for those seeking peace and tranquility. Located just a short drive from hiking trails and a pristine lake, it’s an ideal base for outdoor enthusiasts or couples looking for a romantic escape.                    
+			    </div>
+			    <div class="amenities">
+				    <h2 class="article_subtitle">Amenities</h2>
+				    <ul>
+					    <li><div class="tv_icon"></div>TV</li>
+					    <li><div class="wifi_icon"></div>Wifi</li>
+					    <li><div class="pet_icon"></div>Pet friendly</li>
+				    </ul>
+			    </div>
+			    <div class="reviews">
+				    <h2 class="article_subtitle">Reviews</h2>
+				    <ul>
+					    <li><div class="review_item">
+							    <h3>From Bob Dylan the 27th January 2017</h3>
+							    <p class="review_text">Wow, what can I say?! I'm a real rolling stone, you may have heard, but - by golly - I'd just as well settle down in this humble home, if you'd part with it - course, I'm sure you wouldn't. Real shame too. Oh well...
+							    </p>
+						    </div>
+					    </li>
+					    <li>
+						    <div class="review_item">
+							    <h3>From Justin Majetich the 28th April 1991</h3>
+							    <p class="review_text">I was birthed in this here bathtub today!</p>
+						    </div>
+					    </li>
+				    </ul>
+			    </div>
+		    </article>
+		    <article>
+			    <div class="places_headline">
+				    <h2>A suite</h2>
+				    <div class="price_by_night">$130</div>
+			    </div>
+                            <div class="information">
+                                    <div class="max_guest">
+                                            <div class="guest_icon"></div>
+					    <p>6 guests</p>
+                                    </div>
+                                    <div class="number_rooms">
+                                            <div class="rooms_icon"></div>
+					    <p>3 bedroom</p>
+                                    </div>
+                                    <div class="number_bathrooms">
+                                            <div class="bathrooms_icon"></div>
+					    <p>2 bathroom</p>
+                                    </div>
+                            </div>
+			    <div class="user">
+                                    <strong>Owner:</strong> Simon Peter
+                            </div>
+			    <div class="description">
+				    Wake up to the sound of waves in this 3-bedroom beachfront home. Boasting floor-to-ceiling windows, a spacious deck with BBQ facilities, and direct access to a private beach, this property is designed for relaxation. Whether you're lounging by the fireplace, preparing a feast in the chef’s kitchen, or stargazing from the hot tub, this sanctuary offers a luxurious getaway for families or groups of friends.
+			    </div>
+			    <div class="amenities">
+				    <h2 class="article_subtitle">Amenities</h2>
+				    <ul>
+					    <li><div class="tv_icon"></div>TV</li>
+					    <li><div class="wifi_icon"></div>Wifi</li>
+					    <li><div class="pet_icon"></div>Pet friendly</li>
+				    </ul>
+			    </div>
+			    <div class="reviews">
+				    <h2 class="article_subtitle">Reviews</h2>
+				    <ul>
+					    <li>
+						    <div class="review_item">
+							    <h3>From Bob Dylan the 27th January 2017</h3>
+							    <p class="review_text">Wow, what can I say?! I'm a real rolling stone, you may have heard, but - by golly - I'd just as well settle down in this humble home, if you'd part with it - course, I'm sure you wouldn't. Real shame too. Oh well...
+							    </p>
+						    </div>
+					    </li>
+					    <li>
+						    <div class="review_item">
+							    <h3>From Justin Majetich the 28th April 1991</h3>
+							    <p class="review_text">I was birthed in this here bathtub today!</p>
+						    </div>
+					    </li>
+				    </ul>
+			    </div>
+		    </article>
+	    </section>
+    </div>
+    <footer>
+        <p>Best School</p>
+    </footer>
+</body>
+</html>
+
